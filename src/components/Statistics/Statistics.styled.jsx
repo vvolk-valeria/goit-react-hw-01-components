@@ -1,14 +1,18 @@
 import styled from '@emotion/styled';
 
+const randomColor = () => {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+};
+
 export const StatisticsContainer = styled.section`
   margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
   width: 350px;
   border-radius: 5px;
-  background-color: rgba(140, 247, 227, 0.8);
   padding: 20px;
   box-shadow: 0px 0px 10px 15px rgba(146, 207, 235, 0.75);
+  background-color: ${randomColor};
 `;
 
 export const Title = styled.h2`
@@ -25,6 +29,7 @@ export const StatList = styled.ul`
   justify-content: space-evenly;
   box-shadow: 0px 0px 10px 5px rgba(144, 213, 245, 0.75);
   border-radius: 5px;
+  background-color: rgba(140, 247, 227, 0.8);
 `;
 
 export const Item = styled.li`
